@@ -1,62 +1,59 @@
-## Hi, I'm Oleksii 👋
+# Oleksii Yelenskyi
 
-**Junior SOC Analyst · IT Support** · Kraków, Poland
+Junior SOC Analyst, Kraków
 
-Cybersecurity graduate working on Windows log analysis and detection engineering.
-I write Sigma rules, test them against real attack logs, and document what they miss
-as carefully as what they catch.
+I studied cybersecurity and now I mostly work on detection: writing Sigma rules for Windows and checking them against real attack logs to see what they actually catch and what they miss.
 
-Looking for a junior role in IT support or a SOC team in Kraków.
-Full right to work in Poland.
+Looking for my first job in a SOC or IT support team, in Kraków or remote. I have the right to work in Poland.
 
----
-
-### 🛡️ Security
-
-**[soc-detection-lab](https://github.com/flexeykinDev/soc-detection-lab)**
-Sigma detection rules for Windows, validated against **278 real attack EVTX captures**
-mapped to MITRE ATT&CK.
-
-- 17 detections across 15 captures: mimikatz, Meterpreter, MalSeclogon, Atomic Red Team
-- LSASS rule built on process access masks, so renamed tools don't slip past it
-- rules converted to **KQL** (Microsoft Defender XDR) and **Splunk SPL**
-- every rule has its blind spots written down, not just its hits
+<a href="mailto:alekselenskiy.twink@gmail.com"><img src="https://img.shields.io/badge/Email-alekselenskiy.twink%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 
 ---
 
-### 🧰 Stack
+### soc-detection-lab
 
-**Detection & analysis**
-![Sigma](https://img.shields.io/badge/Sigma-1f2937?style=flat-square)
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-1f2937?style=flat-square)
-![Sysmon](https://img.shields.io/badge/Sysmon-1f2937?style=flat-square)
-![Windows Event Log](https://img.shields.io/badge/Windows_Event_Log-1f2937?style=flat-square)
-![KQL](https://img.shields.io/badge/KQL-1f2937?style=flat-square)
-![Splunk SPL](https://img.shields.io/badge/Splunk_SPL-1f2937?style=flat-square)
-![Wireshark](https://img.shields.io/badge/Wireshark-1f2937?style=flat-square&logo=wireshark)
-![Nmap](https://img.shields.io/badge/Nmap-1f2937?style=flat-square)
+[github.com/flexeykinDev/soc-detection-lab](https://github.com/flexeykinDev/soc-detection-lab)
 
-**Systems & tools**
-![Windows](https://img.shields.io/badge/Windows-1f2937?style=flat-square&logo=windows)
-![Linux](https://img.shields.io/badge/Linux-1f2937?style=flat-square&logo=linux)
-![Python](https://img.shields.io/badge/Python-1f2937?style=flat-square&logo=python)
-![Git](https://img.shields.io/badge/Git-1f2937?style=flat-square&logo=git)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-1f2937?style=flat-square&logo=githubactions)
+Three Sigma rules tested on 278 real EVTX attack captures from a public dataset. They fired 17 times across 15 captures, including mimikatz, Meterpreter and MalSeclogon.
+
+A few things I learned along the way:
+
+- The LSASS rule looks at process access masks instead of file names, so it still works when a tool is renamed.
+- I converted the rules to Splunk SPL and to KQL for Defender XDR. One of them didn't convert to KQL, and the README explains why.
+- My first PowerShell rule had false positives on the remoting host. I narrowed it down and kept the real attacks.
+
+![Sigma](https://img.shields.io/badge/Sigma-555?style=flat-square)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-555?style=flat-square)
+![Sysmon](https://img.shields.io/badge/Sysmon-555?style=flat-square)
+![KQL](https://img.shields.io/badge/KQL-555?style=flat-square)
+![Splunk SPL](https://img.shields.io/badge/Splunk_SPL-555?style=flat-square)
 
 ---
 
-### 🔧 Other projects
+### What I work with
 
-Built with AI assistance. Architecture decisions, testing, debugging and shipping are mine.
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-333?style=flat-square&logo=linux&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-555?style=flat-square)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-| Project | What it is |
+---
+
+### Other stuff
+
+Side projects I built with AI help. I made the decisions, tested and fixed them, and got them working.
+
+| | |
 |---|---|
-| [QuasarMC](https://github.com/flexeykinDev/QuasarMC) | Minecraft 1.21.4 server core from scratch in Java 21, region-threaded |
-| [dbd-perk-randomizer](https://github.com/flexeykinDev/dbd-perk-randomizer) | Web app with CI and a scheduled GitHub Actions data refresh |
-| [roflo-pinterest](https://github.com/flexeykinDev/roflo-pinterest) | Python + Playwright tray app, packaged as a standalone .exe |
-| [lumen](https://github.com/flexeykinDev/lumen) | Music widget for the Windows 11 taskbar, Rust |
-| [Vortex-Hub](https://github.com/flexeykinDev/Vortex-Hub) | Personal site, Next.js |
+| [QuasarMC](https://github.com/flexeykinDev/QuasarMC) | Minecraft server core written from scratch in Java |
+| [dbd-perk-randomizer](https://github.com/flexeykinDev/dbd-perk-randomizer) | Perk randomizer for Dead by Daylight, data updates itself with GitHub Actions |
+| [roflo-pinterest](https://github.com/flexeykinDev/roflo-pinterest) | Small Python tray app, packaged as an .exe |
+| [lumen](https://github.com/flexeykinDev/lumen) | Music widget for the Windows 11 taskbar, in Rust |
+| [Vortex-Hub](https://github.com/flexeykinDev/Vortex-Hub) | My personal site |
 
 ---
 
-**Languages:** Ukrainian, Russian (native) · English (B2) · Polish (A2, learning)
+Ukrainian and Russian are my native languages, English is B2, and I'm learning Polish (A2).
