@@ -31,7 +31,7 @@ jobs:
           publish_branch: output
           commit_message: "Update snake"
 
-  cards-dark:
+  cards:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -44,22 +44,4 @@ jobs:
         with:
           USERNAME: ${{ github.repository_owner }}
           TIME_ZONE: Europe/Warsaw
-          THEME: github_dark
-          BRANCH_NAME: master
-
-  cards-light:
-    needs: cards-dark
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: master
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          TIME_ZONE: Europe/Warsaw
-          THEME: github
           BRANCH_NAME: master
