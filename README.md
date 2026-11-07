@@ -62,8 +62,8 @@ Now-playing capsule for the Windows 11 taskbar. Works with any player, per-app v
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/flexeykinDev/ShadowPlay_Patcher"><b>ShadowPlay_Patcher</b></a><br>
-Tray app that stops NVIDIA Instant Replay from turning itself off on protected content. Win32 API hooking in C++.<br><br>
-<img src="https://skillicons.dev/icons?i=cpp,cmake,windows" height="28" alt="C++, CMake, Windows">
+Tray app that stops NVIDIA Instant Replay from turning itself off on protected content. Win32 API hooking in Rust.<br><br>
+<img src="https://skillicons.dev/icons?i=rust,windows" height="28" alt="Rust, Windows">
 </td>
 </tr>
 <tr>
